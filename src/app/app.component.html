@@ -1,0 +1,9 @@
+City: <input type = "text" [(ngModel)]="cityName"><br>
+<button (click)="loadData()">Get Weather</button>
+<div *ngIf="load">
+  <h3>{{day[0]}}:  {{temp[0]}}C</h3>
+  <h3>{{day[1]}}:   {{temp[1]}}C</h3>
+  <h3>{{day[2]}}:  {{temp[2]}}C</h3>
+  <h3>{{day[3]}}:  {{temp[3]}}C</h3>
+  <h3>{{day[4]}}:  {{temp[4]}}C</h3>
+</div>
